@@ -77,7 +77,7 @@
   pointer-events: none;
 }
 
-.theme-menu__button:disabled::before{
+.theme-menu__button:disabled::before {
   content: '▶';
   position: absolute;
   animation-name: arrow;
@@ -151,7 +151,7 @@
 .list-content {
   display: flex;
   flex-direction: column;
-  gap: 1.625rem;  
+  gap: 1.625rem;
 }
 
 .content-container {
@@ -302,7 +302,7 @@
 }
 
 @media (hover: hover) {
-  .button-effect::before{
+  .button-effect::before {
     content: '';
     position: absolute;
     top: 0;

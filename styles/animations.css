@@ -33,7 +33,7 @@
 }
 
 @media (hover: hover) {
-  .like-icon:hover .core{
+  .like-icon:hover .core {
     transition: 0.3s;
     opacity: 1;
   }
@@ -44,7 +44,7 @@
   }
 }
 
-.like-icon:active .core{
+.like-icon:active .core {
   fill: #FF0000;
   transition: 0.3s;
 }
@@ -101,5 +101,5 @@
   }
   to {
     left: -14px;
-  }  
+  }
 }
