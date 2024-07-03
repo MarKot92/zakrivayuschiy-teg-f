@@ -12,3 +12,94 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+.contour {
+  transition: 0.1s;
+}
+
+.main-body {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.core {
+  opacity: 0;
+  transition-delay: 0.03s;
+  transition: 0.3s;
+}
+
+.sparks {
+  opacity: 0;
+}
+
+@media (hover: hover) {
+  .like-icon:hover .core{
+    transition: 0.3s;
+    opacity: 1;
+  }
+  .like-icon:hover .main-body {
+    opacity: 1;
+    transition-delay: 0.05s;
+    transition: 0.3s;
+  }
+}
+
+.like-icon:active .core{
+  fill: #FF0000;
+  transition: 0.3s;
+}
+
+.like-icon:active .main-body {
+  fill: #FF0000;
+  transition-delay: 0.05s;
+  transition: 0.3s;
+}
+
+.like-icon.is-liked .contour {
+  fill: #FF0000;
+  transition-delay: 0.06s;
+  transition: 0.3s;
+}
+
+.like-icon.is-liked .heart {
+  animation-name: increase-heart;
+  animation-delay: 0.1s;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in;
+  animation-direction: alternate;
+}
+
+.like-icon.is-liked .sparks {
+  animation-name: sparks;
+  animation-delay: 0.3s;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in;
+  animation-direction: alternate;
+}
+
+@keyframes increase-heart {
+  from {
+    scale: 1;
+  }
+  to {
+    scale: 1.5;
+  }
+}
+
+@keyframes sparks {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes arrow {
+  from {
+    left: -18px;
+  }
+  to {
+    left: -14px;
+  }  
+}

@@ -2,7 +2,7 @@
 еще атрибуты disabled и data-theme. Поэтому их нельзя менять в HTML. */
 
 function changeTheme(theme) {
-  document.documentElement.className = '';
+  document.documentElement.className = 'page';
   document.documentElement.classList.add(`theme-${theme}`);
   localStorage.setItem('theme', theme);
 }
