@@ -15,7 +15,6 @@
 */
 
 .page {
-  padding-block-start: 6.375rem;
   color: var(--accent-color);
   font-family: var(--basic-font);
   font-weight: var(--font-weight-text);
@@ -31,6 +30,7 @@
   align-items: center;
   margin-inline-start: auto;
   margin-inline-end: auto;
+  margin-block-start: 8.5rem;
   border: 2px solid var(--accent-color);
   font-family: var(--accent-font);
   font-weight: 400;
@@ -270,7 +270,7 @@
   mix-blend-mode: difference;
 }
 
-.footer {
+.save-memory {
   display: flex;
   justify-content: center;
   margin-inline-start: auto;
@@ -281,7 +281,7 @@
   
 }
 
-.footer-button {
+.save-memory-button {
   position: relative;
   z-index: 2;
   display: flex;
@@ -351,8 +351,7 @@
 }
 
 .dialog::backdrop {
-  opacity: 0.75;
-  background-color: var(--background-color);
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 .dialog-item {
@@ -378,5 +377,8 @@
 
 .dialog-button {
   width: 100%;
+  font-family: var(--accent-font);
+  font-size: 0.875rem;
+  line-height: 0.9;
 }
 

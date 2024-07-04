@@ -1,1 +1,1 @@
-https://github.com/MarKot92/zakrivayuschiy-teg-f.git
+https://github.com/MarKot92/slozhno-sosredotochitsya.git

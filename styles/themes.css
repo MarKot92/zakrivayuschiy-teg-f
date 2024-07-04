@@ -6,7 +6,6 @@
 */
 
 .page.theme-dark {
-  --background-image: ;
   --font-weight-title: 785;
   --font-weight-text: 465;
   --accent-color: #00CC14;
@@ -22,7 +21,6 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --background-image: ;
     --font-weight-title: 700;
     --font-weight-text: 400;
     --accent-color: #000;
@@ -38,7 +36,6 @@
 }
 
 .page.theme-light {
-  --background-image: ;
   --font-weight-title: 700;
   --font-weight-text: 400;
   --accent-color: #000;
