@@ -17,7 +17,7 @@
 .page {
   color: var(--accent-color);
   font-family: var(--basic-font);
-  font-weight: var(--font-weight-text);
+  font-variation-settings: "wght" var(--font-weight-text);
   background-color: var(--accent-color);
   background-image: var(--background-image);
   background-attachment: fixed;
@@ -30,14 +30,14 @@
   align-items: center;
   margin-inline-start: auto;
   margin-inline-end: auto;
-  margin-block-start: 8.5rem;
+  margin-block-start: 6.375rem;
   border: 2px solid var(--accent-color);
   font-family: var(--accent-font);
   font-weight: 400;
   text-transform: uppercase;
   background-color: var(--background-color);
   block-size: clamp(20.188rem, 19.285rem + 3.85vw, 22.75rem);
-  max-inline-size: 43.5rem;
+  max-inline-size: 43.7rem;
 }
 
 .logo {
@@ -49,10 +49,14 @@
 }
 
 .title {
-  padding: 1.25rem 0 1.563rem;
+  padding: 1.25rem 0 1.363rem;
   font-weight: inherit;
   font-size: clamp(0.875rem, 0.677rem + 0.85vw, 1.438rem);
   line-height: 1;
+}
+
+.header__theme-menu {
+  padding-inline-start: 1.125rem;
 }
 
 .theme-menu__list {
@@ -123,7 +127,7 @@
   margin-inline-start: auto;
   margin-inline-end: auto;
   padding-block-start: 6.375rem;
-  max-inline-size: 43.5rem;
+  max-inline-size: 43.7rem;
 }
 
 .list {
@@ -135,7 +139,7 @@
 
 .list-card {
   border: 2px solid var(--accent-color);
-  padding-block-end: 1.563rem;
+  padding-block-end: 1.363rem;
   background-color: var(--background-color);
 }
 
@@ -143,7 +147,7 @@
   padding-inline-start: 0.625rem;
   padding-block-start: clamp(0.25rem, 0.272rem + -0.09vw, 0.188rem);
   padding-block-end: clamp(0.375rem, 0.441rem + -0.28vw, 0.188rem);
-  font-weight: var(--font-weight-title);
+  font-variation-settings: "wght" var(--font-weight-title);
   font-size: 1.125rem;
   line-height: 1.21;
 }
@@ -218,7 +222,7 @@
   padding-inline-start: 1.563rem;
   padding-inline-end: 1.563rem;
   font-size: 1.125rem;
-  font-style: var(--font-weight-text);
+  font-variation-settings: "wght" var(--font-weight-text);
   line-height: 1.17;
 }
 
@@ -256,7 +260,7 @@
   width: 8.125rem;
   border: 2px solid var(--accent-color);
   padding-block-start: 0.781rem;
-  padding-block-end: 0.781rem;
+  padding-block-end: 0.581rem;
   color: var(--accent-color);
   font-family: var(--accent-font);
   font-size: 0.875rem;
@@ -273,9 +277,11 @@
 .save-memory {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  width: clamp(19.125rem, 17.391rem + 7.4vw, 20.938rem);
   margin-inline-start: auto;
   margin-inline-end: auto;
-  padding: 3.375rem 0 6.375rem;
+  padding: 3.175rem 0 6.375rem;
   font-family: var(--accent-font);
   max-inline-size: 43.5rem;
   
@@ -288,17 +294,29 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
+  gap: 8px;
   border: 2px solid var(--accent-color);
   padding: 0.938rem 1.1rem;
+  font-family: var(--accent-font);
+  font-size: 0.875rem;
+  line-height: 0.9;
   background-color: var(--background-color);
   cursor: pointer;
-  
 }
 
 .diskette {
   color: var(--font-color-button);
   mix-blend-mode: difference;
+  width: 1.75rem;
+}
+
+@media (width >= 768px) {
+  .save-memory-button {
+    flex-wrap: nowrap;
+  }
+  .diskette {
+    width: 1.313rem;
+  }
 }
 
 @media (hover: hover) {
@@ -377,8 +395,5 @@
 
 .dialog-button {
   width: 100%;
-  font-family: var(--accent-font);
-  font-size: 0.875rem;
-  line-height: 0.9;
 }
 

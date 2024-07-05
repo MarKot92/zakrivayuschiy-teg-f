@@ -14,18 +14,18 @@
 */
 
 .contour {
-  transition: 0.1s ease;
+  transition: 0.1s linear;
 }
 
 .main-body {
   opacity: 0;
-  transition: 0.3s ease;
+  transition: 0.3s linear;
 }
 
 .core {
   opacity: 0;
-  transition: 0.3s ease;
-  transition-delay: 0.03s ease;
+  transition: 0.3s linear;
+  transition-delay: 0.03s;
 }
 
 .sparks {
@@ -35,29 +35,29 @@
 @media (hover: hover) {
   .like-icon:hover .core {
     opacity: 1;
-    transition: 0.3s ease;
+    transition: 0.3s linear;
   }
   .like-icon:hover .main-body {
     opacity: 1;
-    transition: 0.3s ease;
+    transition: 0.3s linear;
     transition-delay: 0.05s;
   }
 }
 
 .like-icon:active .core {
   fill: #FF0000;
-  transition: 0.3s ease;
+  transition: 0.3s linear;
 }
 
 .like-icon:active .main-body {
   fill: #FF0000;
-  transition: 0.3s ease;
+  transition: 0.3s linear;
   transition-delay: 0.05s;
 }
 
 .like-icon.is-liked .contour {
   fill: #FF0000;
-  transition: 0.3s ease;
+  transition: 0.3s linear;
   transition-delay: 0.06s;
 }
 
